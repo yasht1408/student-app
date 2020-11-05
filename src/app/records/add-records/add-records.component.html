@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-xs-8 col-mid-6 col-mf-offset-3">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="form-control" ngModel required> 
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" name="age" class="form-control" ngModel required>
+          </div>
+          <div class="form-group"> 
+            <label>Choose Grade</label>  
+            <select name="grade" id="grade" ngModel required class="form-control">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C<option>
+              <option value="D">D</option>
+            </select>
+          </div>
+       
+        <div class="text-right">
+          <!-- <span class="bt"><button class="btn btn-primary" type="button" (click)="onAdd()">Add</button></span> -->
+          <span class="bt"><button class="btn btn-primary" type="submit">SaveData</button></span>
+          <span class="bt"><button class="btn btn-primary" type="button" (click)="onShow()">Show</button></span> 
+        </div>  
+       
+      </form>
+    </div>
+  </div>

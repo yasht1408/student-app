@@ -1,0 +1,17 @@
+
+ <div class="row">
+   <div class="col-xs-12">
+    <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let recordEl of records; let i = index"
+          (click)="onEditItem(i)"
+        >
+         Name: {{ recordEl.name }} <br> Age:{{ recordEl.age }} <br> Grade:{{ recordEl.grade}}
+        </a>
+      </ul>
+   </div>  
+ </div>
+  
+  
